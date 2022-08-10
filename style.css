@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@300;400;500;700");
+
+body {color: rgb(49, 56, 65);
+background-color: white;
+text-align: center;
+/* font-family: Arial, Helvetica, sans-serif; */
+font-family: 'Open Sans', sans-serif;
+font-weight: 400;
+font-size: 18;
+line-height: 1;
+padding: 5px;
+}
+
+h1{color: #00008b;}
+h2,h4{color: rgb(0, 87, 128);}
+h3{color: rgb(94, 182, 94);}
+
+
+a {
+    color: blue;
+    text-decoration: none;
+  }
+a:hover{color: rgb(255, 0, 0);
+transition: 0.5s;}
+
+#profile_picture_circle {
+  width: 220;
+  height: 220px;
+  border-radius: 50%;
+}
+
+
+
+.container {
+  width: 500px;   /* This sets the width */
+  margin: 0 auto; /* This automatically sets left/right margins */
+}
+
+.card_grey {
+  background-color: #daf7fd;
+  padding: 30px;
+  width: 500px;
+  margin: 25px auto;
+  border-radius: 5px;
+  border: 1px solid #570A57;
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 5px 30px;
+  list-style: none;
+  padding-left: 0px;
+}
+
+/* When screen size is reduced the fontsize is increased, Above 720 it defaults to what I defined earlier */
+/* As long as screensize is 0 --> 720 this is applied, above this value the default is taken */
+
+@media (max-width: 720px) {p {
+    font-size: 25;
+  } }
+
+/* As long as screen size is 1000px or greater this will be applied, otherwise below this value default is taken */
+@media (min-width: 1000px) {h1 {
+    font-size: 36;
+  } }
+
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 300;
+    margin: 0 auto;
+  }
+}
