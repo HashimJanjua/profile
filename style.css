@@ -36,7 +36,17 @@ transition: 0.5s;}
   margin: 0 auto; /* This automatically sets left/right margins */
 }
 
-.card_grey {
+.card_green {
+  background-color: #b9fdd6;
+  padding: 30px;
+  width: 500px;
+  margin: 25px auto;
+  border-radius: 5px;
+  border: 1px solid #570A57;
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
+}
+
+.card_blue {
   background-color: #daf7fd;
   padding: 30px;
   width: 500px;
@@ -46,12 +56,27 @@ transition: 0.5s;}
   box-shadow: 0 0 16px rgba(0,0,0,0.1);
 }
 
+
 .list-inline > li {
   display: inline-block;
   padding: 5px 30px;
   list-style: none;
   padding-left: 0px;
 }
+
+.button-blue {text-decoration:none;
+  background-color:#7fa9e0;
+  font-size: 18;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  color:white;
+  padding:15px;
+  border-radius:5px;
+  box-shadow: 0 0 16px rgb(207, 194, 194);
+  transition: 0.5s;
+  }
+
+  .button-grey {font-size: 18;}
 
 /* When screen size is reduced the fontsize is increased, Above 720 it defaults to what I defined earlier */
 /* As long as screensize is 0 --> 720 this is applied, above this value the default is taken */
